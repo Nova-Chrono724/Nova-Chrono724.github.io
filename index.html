@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAura.lb — Premium Web Design & Development Agency</title>
+  <meta name="description" content="WebAura.lb creates unforgettable, high-performance websites for modern businesses, luxury brands, and forward-thinking startups in Lebanon and worldwide.">
+  <meta name="keywords" content="web design Lebanon, web development Beirut, bespoke agency website, luxury UI UX design, e-commerce development, high-converting websites">
+  <meta name="author" content="WebAura.lb">
+  <meta name="theme-color" content="#07080a">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webaura.lb/">
+  <meta property="og:title" content="WebAura.lb — Websites That Make Businesses Unforgettable">
+  <meta property="og:description" content="Premium websites engineered to turn attention into trust, and visitors into high-value clients.">
+  <meta property="og:image" content="https://webaura.lb/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%2307080a' stroke='%2300F0FF' stroke-width='6'/><path d='M28 35 L42 68 L50 48 L58 68 L72 35' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='50' cy='28' r='4' fill='%2300F0FF'/></svg>">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-obsidian text-slate-light antialiased selection:bg-cyan selection:text-black">
+
+  <!-- ========================================== -->
+  <!-- PAGE PRELOADER -->
+  <!-- ========================================== -->
+  <div id="page-loader">
+    <div class="flex flex-col items-center gap-5">
+      <div class="relative flex items-center justify-center w-14 h-14 rounded-2xl bg-surface-elevated border border-white/10 shadow-glow-bright">
+        <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6l5 12 3-7 3 7 5-12"/>
+          <circle cx="12" cy="4" r="1.5" fill="#00F0FF"/>
+        </svg>
+        <span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-cyan animate-pulse"></span>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <span class="font-display font-bold text-xl tracking-tight text-white">
+          WebAura<span class="text-cyan font-mono text-sm ml-0.5">.lb</span>
+        </span>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan animate-ping"></span>
+          <span class="text-[11px] font-mono tracking-widest text-slate-400 uppercase">EXPERIENCE INITIALIZING</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="hero-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- Global Subtle Background Atmosphere -->
+  <div class="fixed inset-0 bg-noise pointer-events-none z-0"></div>
+  <div class="glow-orb-cyan"></div>
+  <div class="glow-orb-violet"></div>
+
+  <!-- SKIP TO CONTENT FOR A11Y -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================== -->
+  <!-- 1. NAVIGATION -->
+  <!-- ========================================== -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container-custom">
+      <nav class="nav-inner flex items-center justify-between py-4 px-6 rounded-full mt-4 transition-all duration-300 border border-white/5 bg-obsidian-glass backdrop-blur-xl">
+        <!-- Logo -->
+        <a href="#home" class="logo-group flex items-center gap-3 group" aria-label="WebAura.lb Home">
+          <div class="logo-mark relative flex items-center justify-center w-9 h-9 rounded-xl bg-surface-elevated border border-white/10 group-hover:border-cyan/50 transition-all duration-300 shadow-glow-sm">
+            <svg class="w-5 h-5 text-white group-hover:text-cyan transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6l5 12 3-7 3 7 5-12"/>
+              <circle cx="12" cy="4" r="1.5" fill="currentColor"/>
+            </svg>
+            <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-cyan animate-pulse"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-lg tracking-tight text-white group-hover:text-white transition-colors">
+              WebAura<span class="text-cyan font-mono text-sm ml-0.5">.lb</span>
+            </span>
+            <span class="text-[10px] font-mono tracking-widest text-slate-dim uppercase -mt-1">Bespoke Studio</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-1 bg-surface-dark/60 border border-white/5 rounded-full px-4 py-1.5 backdrop-blur-md">
+          <a href="#home" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">Home</a>
+          <a href="#services" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">Services</a>
+          <a href="#work" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">Work</a>
+          <a href="#process" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">Process</a>
+          <a href="#about" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">About</a>
+          <a href="#faq" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">FAQ</a>
+          <a href="#contact" class="nav-link px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-slate-light hover:text-white transition-colors rounded-full hover:bg-white/5">Contact</a>
+        </div>
+
+        <!-- Right Side: Status Badge & Primary CTA -->
+        <div class="hidden lg:flex items-center gap-4">
+          <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/20 text-[11px] font-mono text-emerald-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Available for Q3/Q4</span>
+          </div>
+          <a href="#contact" class="btn-primary group relative inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-black bg-cyan hover:bg-white transition-all duration-300 shadow-glow hover:shadow-glow-bright">
+            <span>Start a Project</span>
+            <svg class="w-3.5 h-3.5 ml-1.5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl bg-surface-elevated border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-cyan" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="menu-icon-bars" class="w-5 h-5 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-menu" class="mobile-drawer fixed inset-x-0 top-[80px] p-4 md:hidden pointer-events-none opacity-0 -translate-y-4 transition-all duration-300 z-40">
+      <div class="p-6 rounded-3xl bg-obsidian-surface border border-white/10 shadow-2xl backdrop-blur-2xl flex flex-col gap-4">
+        <div class="flex flex-col divide-y divide-white/5 text-base font-medium">
+          <a href="#home" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">Home <span class="font-mono text-xs text-slate-dim">01</span></a>
+          <a href="#services" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">Services <span class="font-mono text-xs text-slate-dim">02</span></a>
+          <a href="#work" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">Featured Work <span class="font-mono text-xs text-slate-dim">03</span></a>
+          <a href="#process" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">Process <span class="font-mono text-xs text-slate-dim">04</span></a>
+          <a href="#about" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">About WebAura <span class="font-mono text-xs text-slate-dim">05</span></a>
+          <a href="#faq" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">FAQ <span class="font-mono text-xs text-slate-dim">06</span></a>
+          <a href="#contact" class="mobile-link py-3 text-white hover:text-cyan transition-colors flex items-center justify-between">Contact <span class="font-mono text-xs text-slate-dim">07</span></a>
+        </div>
+        
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <div class="flex items-center gap-2 text-xs font-mono text-slate-dim">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Accepting select projects worldwide
+          </div>
+          <a href="#contact" class="mobile-link btn-primary w-full text-center py-3.5 rounded-2xl text-xs font-bold uppercase tracking-wider text-black bg-cyan">
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- MAIN CONTENT CONTAINER -->
+  <!-- ========================================== -->
+  <main id="main-content" class="relative z-10 scene-3d">
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION -->
+    <!-- ========================================== -->
+    <section id="home" class="min-h-screen pt-36 pb-20 flex flex-col justify-center relative overflow-hidden">
+      <div class="container-custom relative z-10">
+        <div class="max-w-5xl mx-auto text-center flex flex-col items-center relative">
+          
+          <!-- Floating 3D Spatial Accents -->
+          <div class="floating-3d-tag absolute -top-10 -left-6 hidden lg:flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-surface-elevated/90 border border-cyan/30 text-[11px] font-mono text-cyan shadow-glow-sm pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse"></span>
+            <span>✦ SPATIAL 3D ARCHITECTURE</span>
+          </div>
+          <div class="floating-3d-tag absolute -bottom-6 -right-6 hidden lg:flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-surface-elevated/90 border border-violet-400/30 text-[11px] font-mono text-violet-300 shadow-glow-sm pointer-events-none">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
+            <span>Z-DEPTH: REALTIME 60FPS</span>
+          </div>
+          
+          <!-- Credibility Pill Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-md mb-8 hover:border-cyan/30 transition-all duration-300 animate-fade-in-up">
+            <span class="w-2 h-2 rounded-full bg-cyan shadow-[0_0_8px_#00F0FF]"></span>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-slate-200">DESIGN • DEVELOPMENT • DIGITAL EXPERIENCE</span>
+          </div>
+
+          <!-- Main Monumental Headline -->
+          <h1 class="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white uppercase leading-[1.05] mb-8 animate-fade-in-up delay-100">
+            WE BUILD WEBSITES<br>
+            THAT MAKE BUSINESSES<br>
+            <span class="text-gradient-cyan relative inline-block">
+              LOOK UNFORGETTABLE.
+              <svg class="absolute -bottom-2 left-0 w-full h-3 text-cyan/40" viewBox="0 0 100 12" preserveAspectRatio="none">
+                <path d="M0,0 Q50,12 100,0" stroke="currentColor" stroke-width="3" fill="none"/>
+              </svg>
+            </span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="max-w-2xl text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed mb-10 animate-fade-in-up delay-200">
+            Premium websites designed to turn attention into trust, and visitors into customers. Crafted with surgical precision for modern brands in Lebanon and beyond.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16 animate-fade-in-up delay-300">
+            <a href="#contact" class="btn-primary w-full sm:w-auto px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider text-black bg-cyan hover:bg-white transition-all duration-300 shadow-glow hover:shadow-glow-bright flex items-center justify-center gap-3">
+              <span>Start Your Project</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#work" class="btn-secondary w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-white bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 transition-all duration-300 backdrop-blur-sm flex items-center justify-center gap-2">
+              <span>View Our Work</span>
+              <svg class="w-4 h-4 text-slate-400 group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Micro Stats / Credibility Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-12 pt-8 border-t border-white/10 w-full max-w-3xl text-center animate-fade-in-up delay-400">
+            <div class="flex flex-col items-center">
+              <span class="font-display font-bold text-2xl sm:text-3xl text-white">100%</span>
+              <span class="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wider">Custom Tailored</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="font-display font-bold text-2xl sm:text-3xl text-cyan">&lt; 1.0s</span>
+              <span class="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wider">Load Speed Focus</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1 flex flex-col items-center">
+              <span class="font-display font-bold text-2xl sm:text-3xl text-white">Beirut &amp; Global</span>
+              <span class="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wider">Client Reach</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. TRUST / VALUE STRIP -->
+    <!-- ========================================== -->
+    <section id="categories" class="py-12 border-y border-white/5 bg-obsidian-surface/60 backdrop-blur-md relative overflow-hidden">
+      <div class="container-custom">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          
+          <div class="flex items-center gap-3 shrink-0">
+            <span class="w-2 h-2 rounded-full bg-cyan"></span>
+            <h2 class="font-mono text-xs uppercase tracking-widest text-slate-400">DESIGNED FOR MODERN BUSINESSES</h2>
+          </div>
+
+          <!-- Category Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-4">
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">Restaurants</span>
+            </div>
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">Fitness &amp; Wellness</span>
+            </div>
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">E-commerce</span>
+            </div>
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">Beauty &amp; Salons</span>
+            </div>
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">Professional Services</span>
+            </div>
+            <div class="category-pill flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.02] border border-white/5 hover:border-cyan/40 hover:bg-cyan/[0.03] transition-all duration-300 group">
+              <span class="text-cyan text-sm">✦</span>
+              <span class="text-xs font-medium text-slate-300 group-hover:text-white">Startups &amp; Tech</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. SERVICES SECTION -->
+    <!-- ========================================== -->
+    <section id="services" class="py-28 relative">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+              <span>01 / CAPABILITIES</span>
+            </div>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight">
+              Everything Your Business<br>Needs Online.
+            </h2>
+          </div>
+          <p class="max-w-md text-slate-400 text-sm sm:text-base leading-relaxed">
+            We engineer end-to-end digital solutions that elevate your brand prestige, engage high-intent visitors, and drive predictable commercial growth.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Service 01 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">01</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                Website Design
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Custom layouts and visual identities designed specifically around your business values, aesthetic standards, and audience expectations.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Bespoke Design Systems
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Interactive Wireframing
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Luxury Editorial UI/UX
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">02</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                Website Development
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Fast, responsive and scalable websites built with modern technologies. Clean architecture, lightning load speeds, and bulletproof code.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Performance-First Architecture
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Clean Semantic Code
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Interactive Micro-animations
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">03</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                E-Commerce
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Online stores designed to make products easy to discover, admire, and purchase. Seamless catalog browsing and frictionless checkout experiences.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                High-Conversion Checkouts
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Product Catalog Management
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Payment &amp; WhatsApp Ordering
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">04</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                Website Redesign
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Transform outdated, sluggish websites into modern, high-converting experiences that accurately reflect your brand's current caliber.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Full UX/UI Modernization
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                SEO &amp; Content Migration
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Conversion Rate Optimization
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 05 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">05</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                Mobile Optimization
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Over 70% of visitors browse on mobile. We ensure every touchpoint, tap target, and layout looks and functions effortlessly across every screen size.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Adaptive Fluid Breakpoints
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Thumb-Friendly Navigation
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Fast Mobile Asset Delivery
+              </li>
+            </ul>
+          </div>
+
+          <!-- Service 06 -->
+          <div class="service-card spotlight-card group p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-500 relative overflow-hidden flex flex-col justify-between">
+            <div class="spotlight-glow"></div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="font-mono text-xs text-slate-dim group-hover:text-cyan transition-colors">06</span>
+                <div class="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center text-white group-hover:text-cyan group-hover:border-cyan/40 transition-all">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 group-hover:text-cyan transition-colors">
+                Maintenance &amp; Optimization
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                Continuous performance audits, security patches, domain management, and ongoing feature updates so your website never stagnates.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-6 border-t border-white/5 text-xs font-mono text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                99.9% Uptime &amp; Speed Audits
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Security &amp; SSL Monitoring
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan"></span>
+                Priority Studio Support
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. FEATURED WORK SECTION -->
+    <!-- ========================================== -->
+    <section id="work" class="py-28 bg-obsidian-surface/40 relative">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+              <span>02 / SHOWCASE</span>
+            </div>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight uppercase">
+              WE DON'T JUST BUILD WEBSITES.<br>
+              WE BUILD EXPERIENCES.
+            </h2>
+          </div>
+          <p class="max-w-md text-slate-400 text-sm sm:text-base leading-relaxed">
+            Every project is engineered as an art piece and commercial growth engine. Explore our selected showcase case studies.
+          </p>
+        </div>
+
+        <!-- Featured Project Cards (4 Selected Case Studies) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          
+          <!-- PROJECT 01: NOIR FITNESS -->
+          <div class="project-card group rounded-3xl bg-surface-dark border border-white/10 hover:border-cyan/40 transition-all duration-500 overflow-hidden flex flex-col cursor-pointer" onclick="openProjectModal('noir')">
+            <div class="project-mockup-wrapper relative aspect-[16/10] bg-[#0c0d12] overflow-hidden border-b border-white/5">
+              <!-- Realistic Browser Mockup UI Header -->
+              <div class="mockup-header flex items-center justify-between px-4 py-3 bg-[#13151f] border-b border-white/5">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                </div>
+                <div class="mockup-url font-mono text-[11px] text-slate-400 px-4 py-1 rounded-md bg-black/40 border border-white/5">
+                  noirfitness.club
+                </div>
+                <div class="w-6"></div>
+              </div>
+              
+              <!-- Mockup Content: NOIR FITNESS INTERFACE -->
+              <div class="mockup-body p-6 h-full flex flex-col justify-between bg-gradient-to-br from-[#0c0d12] to-[#161822] text-white relative transition-transform duration-700 group-hover:scale-[1.02]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <span class="font-display font-extrabold tracking-widest text-sm">NOIR // CLUB</span>
+                  <div class="flex gap-3 text-[10px] font-mono text-slate-400">
+                    <span>MEMBERSHIP</span>
+                    <span>STUDIO</span>
+                    <span class="text-cyan">BOOK CLASS</span>
+                  </div>
+                </div>
+                
+                <div class="my-auto py-4">
+                  <div class="inline-block font-mono text-[10px] text-cyan px-2 py-0.5 rounded bg-cyan/10 mb-2">PRIVATE ATHLETIC CLUB</div>
+                  <h4 class="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight uppercase leading-none">
+                    ELEVATE YOUR<br>PHYSICAL PEAK.
+                  </h4>
+                  <p class="text-xs text-slate-400 mt-2 line-clamp-2">Precision personal training, luxury hydrotherapy, and bespoke athletic programming.</p>
+                </div>
+
+                <div class="flex items-center justify-between pt-3 border-t border-white/10 text-[11px] font-mono">
+                  <span class="text-slate-400">4.9 ★ Rating (420+ Reviews)</span>
+                  <span class="px-3 py-1 rounded-full bg-cyan text-black font-bold">RESERVE PASS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Meta -->
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono uppercase tracking-wider text-cyan">FITNESS &amp; WELLNESS</span>
+                  <span class="text-xs font-mono text-slate-dim">CASE STUDY 01</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white mb-2 group-hover:text-cyan transition-colors">
+                  NOIR FITNESS
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  Luxury fitness studio website featuring dynamic class schedule booking, VIP membership portals, and high-impact cinematic aesthetics.
+                </p>
+              </div>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                <span class="text-xs font-mono text-slate-300">UX/UI • Next.js • Booking Engine</span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-cyan group-hover:translate-x-1 transition-transform">
+                  View Project <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 02: EMBER -->
+          <div class="project-card group rounded-3xl bg-surface-dark border border-white/10 hover:border-cyan/40 transition-all duration-500 overflow-hidden flex flex-col cursor-pointer" onclick="openProjectModal('ember')">
+            <div class="project-mockup-wrapper relative aspect-[16/10] bg-[#120e0a] overflow-hidden border-b border-white/5">
+              <!-- Mockup UI Header -->
+              <div class="mockup-header flex items-center justify-between px-4 py-3 bg-[#1c1611] border-b border-white/5">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                </div>
+                <div class="mockup-url font-mono text-[11px] text-amber-200/70 px-4 py-1 rounded-md bg-black/40 border border-white/5">
+                  ember-dining.com
+                </div>
+                <div class="w-6"></div>
+              </div>
+              
+              <!-- Mockup Content: EMBER RESTAURANT -->
+              <div class="mockup-body p-6 h-full flex flex-col justify-between bg-gradient-to-br from-[#15100c] to-[#241a14] text-white relative transition-transform duration-700 group-hover:scale-[1.02]">
+                <div class="flex items-center justify-between border-b border-amber-500/20 pb-3">
+                  <span class="font-serif tracking-widest text-sm text-amber-200">EMBER // BISTRONOMY</span>
+                  <div class="flex gap-3 text-[10px] font-mono text-amber-200/70">
+                    <span>MENUS</span>
+                    <span>WINE CELLAR</span>
+                    <span class="text-amber-400">RESERVATIONS</span>
+                  </div>
+                </div>
+                
+                <div class="my-auto py-4">
+                  <div class="inline-block font-mono text-[10px] text-amber-400 px-2 py-0.5 rounded bg-amber-500/10 mb-2">MICHELIN-GUIDED EXPERIENCE</div>
+                  <h4 class="font-serif font-bold text-2xl sm:text-3xl text-amber-100 tracking-tight leading-none">
+                    WOOD-FIRED GASTRONOMY &amp; COCKTAIL CULTURE.
+                  </h4>
+                  <p class="text-xs text-amber-200/70 mt-2 line-clamp-2">Seasonal Mediterranean tasting menus paired with artisanal mixology in an intimate architectural atmosphere.</p>
+                </div>
+
+                <div class="flex items-center justify-between pt-3 border-t border-amber-500/20 text-[11px] font-mono">
+                  <span class="text-amber-200/70">Downtown Beirut • Valet Available</span>
+                  <span class="px-3 py-1 rounded-full bg-amber-400 text-black font-bold">BOOK TABLE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Meta -->
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono uppercase tracking-wider text-amber-400">HOSPITALITY &amp; DINING</span>
+                  <span class="text-xs font-mono text-slate-dim">CASE STUDY 02</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white mb-2 group-hover:text-cyan transition-colors">
+                  EMBER
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  Premium restaurant &amp; lounge website with interactive sensory menu explorer, instant OpenTable/WhatsApp table reservations, and event booking.
+                </p>
+              </div>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                <span class="text-xs font-mono text-slate-300">Art Direction • Reservation Flow • Motion</span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-cyan group-hover:translate-x-1 transition-transform">
+                  View Project <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 03: VELORA -->
+          <div class="project-card group rounded-3xl bg-surface-dark border border-white/10 hover:border-cyan/40 transition-all duration-500 overflow-hidden flex flex-col cursor-pointer" onclick="openProjectModal('velora')">
+            <div class="project-mockup-wrapper relative aspect-[16/10] bg-[#101014] overflow-hidden border-b border-white/5">
+              <!-- Mockup UI Header -->
+              <div class="mockup-header flex items-center justify-between px-4 py-3 bg-[#181820] border-b border-white/5">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                </div>
+                <div class="mockup-url font-mono text-[11px] text-slate-400 px-4 py-1 rounded-md bg-black/40 border border-white/5">
+                  velora-studio.store
+                </div>
+                <div class="w-6"></div>
+              </div>
+              
+              <!-- Mockup Content: VELORA FASHION -->
+              <div class="mockup-body p-6 h-full flex flex-col justify-between bg-gradient-to-br from-[#0e0e13] to-[#1c1c28] text-white relative transition-transform duration-700 group-hover:scale-[1.02]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <span class="font-display font-light tracking-[0.3em] text-sm">V E L O R A</span>
+                  <div class="flex gap-3 text-[10px] font-mono text-slate-400">
+                    <span>AUTUMN/WINTER</span>
+                    <span>ARCHIVE</span>
+                    <span class="text-cyan">BAG (0)</span>
+                  </div>
+                </div>
+                
+                <div class="my-auto py-4">
+                  <div class="inline-block font-mono text-[10px] text-violet-400 px-2 py-0.5 rounded bg-violet-500/10 mb-2">NEW SEASON RUNWAY DROP</div>
+                  <h4 class="font-display font-light text-2xl sm:text-3xl text-white tracking-tight uppercase leading-tight">
+                    MINIMALIST SILHOUETTES &amp; SUSTAINABLE SILK.
+                  </h4>
+                  <p class="text-xs text-slate-400 mt-2 line-clamp-2">Handcrafted luxury garments designed for timeless elegance and effortless modern living.</p>
+                </div>
+
+                <div class="flex items-center justify-between pt-3 border-t border-white/10 text-[11px] font-mono">
+                  <span class="text-slate-400">Worldwide Express Shipping</span>
+                  <span class="px-3 py-1 rounded-full bg-white text-black font-bold">DISCOVER DROP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Meta -->
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono uppercase tracking-wider text-violet-400">LUXURY E-COMMERCE</span>
+                  <span class="text-xs font-mono text-slate-dim">CASE STUDY 03</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white mb-2 group-hover:text-cyan transition-colors">
+                  VELORA
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  High-fashion e-commerce storefront with dynamic lookbook sliders, currency localization, rapid checkout, and seamless inventory management.
+                </p>
+              </div>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                <span class="text-xs font-mono text-slate-300">Shopify Custom • Editorial UI • Micro-interactions</span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-cyan group-hover:translate-x-1 transition-transform">
+                  View Project <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 04: APEX -->
+          <div class="project-card group rounded-3xl bg-surface-dark border border-white/10 hover:border-cyan/40 transition-all duration-500 overflow-hidden flex flex-col cursor-pointer" onclick="openProjectModal('apex')">
+            <div class="project-mockup-wrapper relative aspect-[16/10] bg-[#0a0d14] overflow-hidden border-b border-white/5">
+              <!-- Mockup UI Header -->
+              <div class="mockup-header flex items-center justify-between px-4 py-3 bg-[#111724] border-b border-white/5">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                </div>
+                <div class="mockup-url font-mono text-[11px] text-cyan px-4 py-1 rounded-md bg-black/40 border border-white/5">
+                  apex-partners.global
+                </div>
+                <div class="w-6"></div>
+              </div>
+              
+              <!-- Mockup Content: APEX ADVISORY -->
+              <div class="mockup-body p-6 h-full flex flex-col justify-between bg-gradient-to-br from-[#080c14] to-[#121c2d] text-white relative transition-transform duration-700 group-hover:scale-[1.02]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <span class="font-display font-bold tracking-wider text-sm flex items-center gap-1.5"><span class="w-2 h-2 bg-cyan rounded-sm"></span> APEX // PARTNERS</span>
+                  <div class="flex gap-3 text-[10px] font-mono text-slate-400">
+                    <span>CAPITAL</span>
+                    <span>ADVISORY</span>
+                    <span class="text-cyan">INSIGHTS</span>
+                  </div>
+                </div>
+                
+                <div class="my-auto py-4">
+                  <div class="inline-block font-mono text-[10px] text-cyan px-2 py-0.5 rounded bg-cyan/10 mb-2">CROSS-BORDER STRATEGY</div>
+                  <h4 class="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight uppercase leading-tight">
+                    INTELLIGENCE-DRIVEN CAPITAL &amp; ADVISORY.
+                  </h4>
+                  <p class="text-xs text-slate-300 mt-2 line-clamp-2">Guiding emerging enterprises through cross-border mergers, capital allocation, and structural scaling.</p>
+                </div>
+
+                <div class="flex items-center justify-between pt-3 border-t border-white/10 text-[11px] font-mono">
+                  <span class="text-slate-400">Beirut • Dubai • London</span>
+                  <span class="px-3 py-1 rounded-full bg-cyan text-black font-bold">CLIENT PORTAL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Meta -->
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs font-mono uppercase tracking-wider text-cyan">PROFESSIONAL SERVICES</span>
+                  <span class="text-xs font-mono text-slate-dim">CASE STUDY 04</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white mb-2 group-hover:text-cyan transition-colors">
+                  APEX ADVISORY
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                  Modern professional advisory website with interactive data visualization, thought leadership publishing system, and confidential client portal.
+                </p>
+              </div>
+              
+              <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                <span class="text-xs font-mono text-slate-300">Corporate Branding • Data Visuals • Security</span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-cyan group-hover:translate-x-1 transition-transform">
+                  View Project <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5.5. INTERACTIVE 3D WEBSITE SHOWCASE -->
+    <!-- ========================================== -->
+    <section id="showcase" class="py-28 relative overflow-hidden">
+      <div class="container-custom">
+        
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan/10 border border-cyan/20 text-xs font-mono text-cyan mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse"></span>
+            LIVE INTERACTIVE PREVIEW
+          </div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight uppercase">
+            EXPERIENCE THE WEBAURA STANDARD
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-xl mx-auto">
+            Hover and interact with this 3D responsive viewport. Real-time perspective physics, tactile components, and adaptive responsiveness.
+          </p>
+
+          <!-- Device Viewport Switcher -->
+          <div class="inline-flex items-center p-1 rounded-2xl bg-surface-dark border border-white/10 mt-8 gap-1">
+            <button id="view-desktop-btn" class="viewport-btn active px-4 py-2 rounded-xl text-xs font-mono text-white bg-white/10 flex items-center gap-2 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Desktop
+            </button>
+            <button id="view-tablet-btn" class="viewport-btn px-4 py-2 rounded-xl text-xs font-mono text-slate-400 hover:text-white flex items-center gap-2 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              Tablet
+            </button>
+            <button id="view-mobile-btn" class="viewport-btn px-4 py-2 rounded-xl text-xs font-mono text-slate-400 hover:text-white flex items-center gap-2 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              Mobile
+            </button>
+          </div>
+        </div>
+
+        <!-- 3D Perspective Card Container -->
+        <div class="tilt-container max-w-5xl mx-auto perspective-1000">
+          <div id="tilt-card" class="tilt-card relative rounded-3xl bg-surface-dark border border-white/15 shadow-2xl shadow-cyan/10 overflow-hidden transition-transform duration-200 ease-out">
+            
+            <!-- Glow Flare Overlay -->
+            <div id="tilt-glare" class="absolute inset-0 pointer-events-none opacity-0 bg-gradient-to-tr from-transparent via-white/5 to-cyan/15 transition-opacity duration-300"></div>
+
+            <!-- Browser Window Chrome -->
+            <div class="browser-chrome px-6 py-4 bg-[#11131a] border-b border-white/10 flex items-center justify-between select-none">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+                <div class="ml-4 flex items-center gap-2 text-slate-400 text-xs font-mono">
+                  <svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  <span class="text-white">https://webaura-client-experience.preview</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-cyan/10 text-cyan border border-cyan/20">60 FPS • GPU Ready</span>
+              </div>
+            </div>
+
+            <!-- Interactive Live Canvas / Simulated Web Application -->
+            <div id="showcase-viewport" class="showcase-content p-6 sm:p-10 bg-gradient-to-b from-[#090b10] to-[#0d1017] min-h-[460px] flex flex-col justify-between transition-all duration-500">
+              
+              <!-- Simulated App Navbar -->
+              <div class="flex items-center justify-between pb-6 border-b border-white/10">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan to-blue-600 flex items-center justify-center font-bold text-black text-xs">
+                    WA
+                  </div>
+                  <span class="font-display font-bold text-white text-sm">AURA STUDIO // PROTOTYPE</span>
+                </div>
+                <div class="flex items-center gap-4 text-xs font-mono">
+                  <span class="text-slate-400 hover:text-white cursor-pointer transition-colors">Overview</span>
+                  <span class="text-slate-400 hover:text-white cursor-pointer transition-colors">Analytics</span>
+                  <button id="interactive-demo-btn" class="px-3 py-1.5 rounded-lg bg-cyan text-black font-semibold hover:bg-white transition-all">
+                    Test Interaction
+                  </button>
+                </div>
+              </div>
+
+              <!-- Simulated App Hero Content -->
+              <div class="my-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-7">
+                  <span class="inline-block text-[11px] font-mono text-cyan bg-cyan/10 px-2.5 py-1 rounded-md mb-3">CONVERSION ENGINE V3</span>
+                  <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-tight">
+                    HIGH-OCTANE DIGITAL COMMERCE ARCHITECTURE.
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
+                    Tested across 50,000+ simulated sessions. Optimized for immediate brand authority, sub-second TTFB, and seamless payment conversions.
+                  </p>
+                  
+                  <div class="flex items-center gap-4 mt-6">
+                    <div class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span class="text-xs font-mono text-slate-300">Live Traffic Simulation Active</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Simulated Live Interactive Metric Card -->
+                <div class="md:col-span-5 p-5 rounded-2xl bg-surface-elevated border border-white/10 shadow-xl">
+                  <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+                    <span>Performance Matrix</span>
+                    <span class="text-cyan">Optimal</span>
+                  </div>
+                  <div class="space-y-3">
+                    <div>
+                      <div class="flex justify-between text-[11px] font-mono mb-1">
+                        <span class="text-slate-300">Lighthouse Score</span>
+                        <span class="text-emerald-400 font-bold">100 / 100</span>
+                      </div>
+                      <div class="w-full h-1.5 rounded-full bg-white/10 overflow-hidden">
+                        <div class="h-full bg-emerald-400 rounded-full w-full"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-[11px] font-mono mb-1">
+                        <span class="text-slate-300">Interaction To Next Paint</span>
+                        <span class="text-cyan font-bold">18ms</span>
+                      </div>
+                      <div class="w-full h-1.5 rounded-full bg-white/10 overflow-hidden">
+                        <div class="h-full bg-cyan rounded-full w-[96%]"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-[11px] font-mono mb-1">
+                        <span class="text-slate-300">Conversion Velocity</span>
+                        <span class="text-violet-400 font-bold">+340%</span>
+                      </div>
+                      <div class="w-full h-1.5 rounded-full bg-white/10 overflow-hidden">
+                        <div class="h-full bg-violet-400 rounded-full w-[88%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Feedback Bar -->
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
+                <span id="demo-status-text" class="text-slate-400">✨ Hover mouse to pivot in 3D space. Click "Test Interaction" to trigger real-time UI state.</span>
+                <span class="text-cyan">Hardware-Accelerated WebGL/CSS3</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. WHY WEBAURA SECTION -->
+    <!-- ========================================== -->
+    <section id="why-us" class="py-28 border-t border-white/5 relative">
+      <div class="container-custom">
+        
+        <div class="max-w-3xl mb-20">
+          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+            <span>03 / PHILOSOPHY</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl text-white tracking-tight uppercase leading-[1.08]">
+            YOUR WEBSITE IS OFTEN<br>THE FIRST IMPRESSION.
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg mt-6 leading-relaxed">
+            In today's digital landscape, customers judge your credibility within 50 milliseconds. When a website is slow, generic, or confusing, potential high-value clients silently leave for competitors. WebAura builds the standard that commands respect.
+          </p>
+        </div>
+
+        <!-- 3 Key Principles Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Principle 01 -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <span class="font-mono text-4xl font-extrabold text-white/10 group-hover:text-cyan/30 transition-colors">01</span>
+              <h3 class="font-display font-bold text-2xl text-white mt-6 mb-4 tracking-tight uppercase">
+                BUILT AROUND<br>YOUR BRAND
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We never force your business into generic pre-made templates. Every line of code, typography choice, color tone, and interactive movement is tailored to your unique identity.
+              </p>
+            </div>
+            <div class="pt-8 mt-8 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-cyan">
+              <span>Bespoke Art Direction</span>
+            </div>
+          </div>
+
+          <!-- Principle 02 -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <span class="font-mono text-4xl font-extrabold text-white/10 group-hover:text-cyan/30 transition-colors">02</span>
+              <h3 class="font-display font-bold text-2xl text-white mt-6 mb-4 tracking-tight uppercase">
+                DESIGNED FOR<br>YOUR CUSTOMERS
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                A gorgeous website is useless if visitors can't find what they need. We create intuitive user journeys that guide prospects directly to reservation, purchase, or contact.
+              </p>
+            </div>
+            <div class="pt-8 mt-8 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-cyan">
+              <span>Intuitive Frictionless UX</span>
+            </div>
+          </div>
+
+          <!-- Principle 03 -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <span class="font-mono text-4xl font-extrabold text-white/10 group-hover:text-cyan/30 transition-colors">03</span>
+              <h3 class="font-display font-bold text-2xl text-white mt-6 mb-4 tracking-tight uppercase">
+                ENGINEERED<br>TO CONVERT
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Aesthetics meet business psychology. We engineer strategic calls-to-action, instant contact pathways, and hyper-optimized load speeds that drive quantifiable inquiries.
+              </p>
+            </div>
+            <div class="pt-8 mt-8 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-cyan">
+              <span>Commercial Conversion Focus</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. PROCESS SECTION -->
+    <!-- ========================================== -->
+    <section id="process" class="py-28 bg-obsidian-surface/30 relative">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="max-w-2xl mb-20">
+          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+            <span>04 / METHODOLOGY</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight uppercase">
+            HOW WE WORK WITH YOU.
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-4">
+            A transparent, streamlined 4-step roadmap engineered to take your project from initial vision to high-impact launch.
+          </p>
+        </div>
+
+        <!-- 4-Step Interactive Process Timeline -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+          
+          <!-- Step 01 -->
+          <div class="process-step p-8 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-cyan">STEP 01</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 uppercase tracking-tight group-hover:text-cyan transition-colors">
+                01 — DISCOVER
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We understand your business model, customer demographics, competitor landscape, and specific commercial goals before writing a line of code.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 text-[11px] font-mono text-slate-dim">
+              Brand Strategy &amp; Scoping
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step p-8 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-cyan">STEP 02</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 uppercase tracking-tight group-hover:text-cyan transition-colors">
+                02 — DESIGN
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We create a bespoke visual direction tailored to your brand, including high-fidelity interactive wireframes, typography systems, and motion prototypes.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 text-[11px] font-mono text-slate-dim">
+              UI/UX &amp; Visual Direction
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step p-8 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-cyan">STEP 03</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 uppercase tracking-tight group-hover:text-cyan transition-colors">
+                03 — BUILD
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We turn approved designs into a responsive, high-performance web experience with clean code, lightning speed, and seamless integrations.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 text-[11px] font-mono text-slate-dim">
+              Modern Front-End &amp; Architecture
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-step p-8 rounded-3xl bg-surface-dark border border-white/10 relative flex flex-col justify-between hover:border-cyan/40 transition-all duration-300 group">
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-cyan">STEP 04</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3 uppercase tracking-tight group-hover:text-cyan transition-colors">
+                04 — LAUNCH
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We conduct rigorous cross-browser testing, accessibility validation, SEO optimization, domain configuration, and provide launch support.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 text-[11px] font-mono text-slate-dim">
+              QA, SEO &amp; Live Deployment
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 8. ABOUT SECTION -->
+    <!-- ========================================== -->
+    <section id="about" class="py-28 relative">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-4">
+              <span>05 / ABOUT STUDIO</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase leading-tight mb-8">
+              WE TURN IDEAS INTO DIGITAL EXPERIENCES.
+            </h2>
+            <div class="space-y-6 text-slate-300 text-base sm:text-lg leading-relaxed">
+              <p>
+                <strong class="text-white font-semibold">WebAura.lb</strong> is an independent web design and development studio based in Lebanon, serving visionary brands locally and across international markets.
+              </p>
+              <p class="text-slate-400 text-sm sm:text-base">
+                We bridge the gap between creative visual artistry and strict engineering discipline. In a market flooded with generic WordPress templates and cookie-cutter builders, we build bespoke digital identities that establish immediate credibility and turn casual browsers into loyal customers.
+              </p>
+              <p class="text-slate-400 text-sm sm:text-base">
+                Whether you are an established restaurant revamping its dining atmosphere online, a boutique retail brand expanding into global e-commerce, or a professional firm wanting to project institutional authority, we build websites that position you at the top of your industry.
+              </p>
+            </div>
+
+            <!-- Studio Pillars -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 mt-8 border-t border-white/10">
+              <div>
+                <span class="font-mono text-xs text-cyan uppercase block mb-1">01 // Focus</span>
+                <span class="text-sm font-semibold text-white">Quality Over Volume</span>
+              </div>
+              <div>
+                <span class="font-mono text-xs text-cyan uppercase block mb-1">02 // Code</span>
+                <span class="text-sm font-semibold text-white">Zero Bloat / 100% Custom</span>
+              </div>
+              <div>
+                <span class="font-mono text-xs text-cyan uppercase block mb-1">03 // Partnership</span>
+                <span class="text-sm font-semibold text-white">Direct Founder Contact</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Feature Card -->
+          <div class="lg:col-span-5">
+            <div class="p-8 sm:p-10 rounded-3xl bg-surface-dark border border-white/10 shadow-2xl relative overflow-hidden">
+              <div class="w-16 h-16 rounded-2xl bg-cyan/10 border border-cyan/30 flex items-center justify-center text-cyan mb-8">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-4">
+                The WebAura Commitment
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                We take on a limited number of clients simultaneously. This guarantees that your project receives full creative attention, meticulous code craftsmanship, and direct communication without junior delegation.
+              </p>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 font-mono text-xs text-slate-300 space-y-2">
+                <div class="flex justify-between">
+                  <span>Location</span>
+                  <span class="text-white">Beirut, Lebanon</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Coverage</span>
+                  <span class="text-cyan">MENA, Europe, Global</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Direct WhatsApp</span>
+                  <span class="text-emerald-400">+961 81 908 649</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 9. RESULTS / BENEFITS SECTION -->
+    <!-- ========================================== -->
+    <section id="results" class="py-28 bg-obsidian-surface/40 relative">
+      <div class="container-custom">
+        
+        <div class="max-w-3xl mx-auto text-center mb-20">
+          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+            <span>06 / TANGIBLE VALUE</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase">
+            WHAT A BETTER WEBSITE CAN DO
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-xl mx-auto">
+            A website shouldn't just be an expense line on your balance sheet; it must function as your highest-performing sales representative 24/7.
+          </p>
+        </div>
+
+        <!-- 4 Benefits Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Benefit 1 -->
+          <div class="benefit-card p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan/10 text-cyan flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3">
+                Build Trust
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Make your business look established, legitimate, and deeply professional from the very first interaction.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 font-mono text-[11px] text-cyan">
+              Instant Credibility
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan/10 text-cyan flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="10 8 16 12 10 16 10 8"/>
+                </svg>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3">
+                Increase Engagement
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Give visitors an irresistible reason to explore your menu, portfolio, offerings, and value proposition.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 font-mono text-[11px] text-cyan">
+              Lower Bounce Rates
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan/10 text-cyan flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3">
+                Generate Leads
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Make it effortless for potential customers to call, WhatsApp, reserve, or submit project inquiries.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 font-mono text-[11px] text-cyan">
+              Direct Revenue Flow
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card p-8 rounded-3xl bg-surface-dark border border-white/5 hover:border-cyan/30 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan/10 text-cyan flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white mb-3">
+                Improve Your Brand
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Create a consistent, unforgettable digital identity that commands premium pricing and marketplace respect.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/5 font-mono text-[11px] text-cyan">
+              Market Authority
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 10. TESTIMONIALS SECTION (DEMO LABELED) -->
+    <!-- ========================================== -->
+    <section id="testimonials" class="py-28 relative">
+      <div class="container-custom">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+              <span>07 / PERSPECTIVES</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight uppercase">
+              CLIENT EXPERIENCE
+            </h2>
+          </div>
+          <!-- Subtly required demo label -->
+          <div class="px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-slate-400">
+            CLIENT EXPERIENCE — DEMO
+          </div>
+        </div>
+
+        <!-- Testimonial Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card p-8 rounded-3xl bg-surface-dark border border-white/10 flex flex-col justify-between relative group hover:border-cyan/30 transition-all duration-300">
+            <div>
+              <div class="flex items-center gap-1 text-cyan mb-6">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                “WebAura completely restructured our online boutique. Our customers immediately noticed the speed difference, and our direct inquiry conversions doubled within the first month.”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-surface-elevated border border-white/10 flex items-center justify-center font-display font-bold text-white text-xs">
+                SM
+              </div>
+              <div>
+                <span class="block text-sm font-semibold text-white">Sarah M.</span>
+                <span class="block text-xs font-mono text-slate-dim">Business Owner — Boutiques</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card p-8 rounded-3xl bg-surface-dark border border-white/10 flex flex-col justify-between relative group hover:border-cyan/30 transition-all duration-300">
+            <div>
+              <div class="flex items-center gap-1 text-cyan mb-6">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                “Finding a studio that understands both bleeding-edge tech and editorial typography is rare. WebAura delivered our startup platform ahead of schedule with zero friction.”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-surface-elevated border border-white/10 flex items-center justify-center font-display font-bold text-white text-xs">
+                DK
+              </div>
+              <div>
+                <span class="block text-sm font-semibold text-white">Daniel K.</span>
+                <span class="block text-xs font-mono text-slate-dim">Founder — Tech Startup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card p-8 rounded-3xl bg-surface-dark border border-white/10 flex flex-col justify-between relative group hover:border-cyan/30 transition-all duration-300">
+            <div>
+              <div class="flex items-center gap-1 text-cyan mb-6">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                “Our table bookings used to get lost in old messaging apps. The custom menu flow and WhatsApp integration WebAura engineered made our reservation process effortless for guests.”
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-surface-elevated border border-white/10 flex items-center justify-center font-display font-bold text-white text-xs">
+                MR
+              </div>
+              <div>
+                <span class="block text-sm font-semibold text-white">Maya R.</span>
+                <span class="block text-xs font-mono text-slate-dim">Restaurant Owner — Fine Dining</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 11. FAQ ACCORDION SECTION -->
+    <!-- ========================================== -->
+    <section id="faq" class="py-28 bg-obsidian-surface/40 relative">
+      <div class="container-custom">
+        
+        <div class="max-w-2xl mb-16">
+          <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+            <span>08 / CLARITY</span>
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-4">
+            Everything you need to know about partnering with WebAura.lb.
+          </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="max-w-4xl space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">How long does a website take to build?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Most custom business websites take between 2 to 4 weeks from discovery to launch. Complex e-commerce platforms or custom interactive web applications typically require 4 to 8 weeks. We establish a clear milestone timeline during onboarding and stick to it.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Do you design completely custom websites?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Yes, 100%. We do not use purchased templates or generic drag-and-drop page builders that clutter code and slow down your site. Every design is crafted specifically for your brand identity and audience.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Will my website work on mobile?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Flawlessly. We design with a mobile-first philosophy. Your website will render with fluid precision and lightning speed across iPhones, Android devices, tablets, laptops, and ultra-wide desktop monitors.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Can you redesign my existing website?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Absolutely. Redesigns are one of our core specialties. We preserve your existing domain SEO rankings, migrate your important content, and rebuild the entire visual front-end and architecture from the ground up.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Can you build an online store?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Yes. We build high-converting e-commerce stores with localized payment gateways (Stripe, Whish, OMT, cash-on-delivery), seamless WhatsApp instant ordering, and intuitive product catalog management.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Can I update my website myself?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Yes. We can integrate an easy-to-use headless Content Management System (CMS) that allows your team to edit text, upload new menu items, publish blog posts, or add new products with zero coding knowledge.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item rounded-2xl bg-surface-dark border border-white/10 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full px-6 sm:px-8 py-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-lg text-white">Do you offer maintenance after launch?</span>
+              <span class="faq-icon w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-cyan shrink-0 transition-transform duration-300 font-mono">+</span>
+            </button>
+            <div class="faq-panel max-h-0 overflow-hidden transition-all duration-300 ease-out px-6 sm:px-8">
+              <div class="pb-6 text-slate-400 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4">
+                Yes. We offer dedicated monthly maintenance plans covering high-speed cloud hosting, security monitoring, SSL certificates, daily backups, and priority development hours for continuous updates.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 12. FINAL CTA SECTION -->
+    <!-- ========================================== -->
+    <section class="py-24 relative overflow-hidden">
+      <div class="container-custom">
+        <div class="relative rounded-3xl p-10 sm:p-16 lg:p-20 bg-gradient-to-b from-surface-dark to-obsidian border border-white/15 overflow-hidden text-center flex flex-col items-center">
+          
+          <!-- Ambient Glow Flare -->
+          <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-cyan/15 blur-[120px] pointer-events-none"></div>
+
+          <span class="inline-block font-mono text-xs uppercase tracking-widest text-cyan mb-4">START YOUR TRANSFORMATION</span>
+          
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl text-white tracking-tight uppercase leading-[1.08] max-w-3xl mb-6">
+            READY TO BUILD SOMETHING<br>
+            <span class="text-cyan">BETTER?</span>
+          </h2>
+          
+          <p class="text-slate-300 text-base sm:text-lg max-w-xl mb-10 leading-relaxed">
+            Tell us about your business and let's create a website that makes people take notice.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <a href="#contact" class="btn-primary w-full sm:w-auto px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider text-black bg-cyan hover:bg-white transition-all duration-300 shadow-glow flex items-center justify-center gap-3">
+              <span>Start Your Project</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/96181908649?text=Hello%20WebAura%2C%20I%20would%20like%20to%20discuss%20a%20website%20project%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn-secondary w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold uppercase tracking-wider text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.969.54 1.78.78 2.796.78h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.766-5.773-5.766zm8.81 5.766c-.002 4.874-3.966 8.84-8.841 8.84-1.52 0-2.956-.39-4.22-1.077l-4.78 1.253 1.277-4.664a8.777 8.777 0 0 1-1.12-4.352c.002-4.874 3.966-8.841 8.842-8.841 4.874 0 8.842 3.967 8.842 8.841z"/></svg>
+              <span>Contact WebAura.lb</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 13. CONTACT & INQUIRY FORM SECTION -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-28 bg-obsidian-surface/60 border-t border-white/5 relative">
+      <div class="container-custom">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          
+          <!-- Contact Left: Briefing Narrative & Direct Channels -->
+          <div class="lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-cyan mb-3">
+                <span>09 / GET IN TOUCH</span>
+              </div>
+              <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight uppercase leading-tight mb-6">
+                LET'S TALK ABOUT YOUR PROJECT.
+              </h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                Fill out the inquiry form to receive a detailed scope breakdown, timeline estimate, and investment options within 24 business hours.
+              </p>
+
+              <!-- Direct Contact Channels -->
+              <div class="space-y-4">
+                <a href="https://wa.me/96181908649" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-surface-dark border border-white/10 hover:border-emerald-500/40 transition-all flex items-center gap-4 group">
+                  <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 flex items-center justify-center">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.969.54 1.78.78 2.796.78h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.766-5.773-5.766zm8.81 5.766c-.002 4.874-3.966 8.84-8.841 8.84-1.52 0-2.956-.39-4.22-1.077l-4.78 1.253 1.277-4.664a8.777 8.777 0 0 1-1.12-4.352c.002-4.874 3.966-8.841 8.842-8.841 4.874 0 8.842 3.967 8.842 8.841z"/></svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-mono text-slate-400">Direct WhatsApp</span>
+                    <span class="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">+961 81 908 649</span>
+                  </div>
+                </a>
+
+                <a href="mailto:webaura.lb123@gmail.com" class="p-4 rounded-2xl bg-surface-dark border border-white/10 hover:border-cyan/40 transition-all flex items-center gap-4 group">
+                  <div class="w-12 h-12 rounded-xl bg-cyan/10 border border-cyan/30 text-cyan flex items-center justify-center">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="block text-xs font-mono text-slate-400">Project Inquiries</span>
+                    <span class="text-sm font-semibold text-white group-hover:text-cyan transition-colors">webaura.lb123@gmail.com</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Operating Hours & Location -->
+            <div class="pt-8 mt-8 border-t border-white/5 text-xs font-mono text-slate-400 space-y-1">
+              <div>STUDIO: Beirut, Lebanon • Remote Global</div>
+              <div>RESPONSE TIME: Typically within 2–4 hours</div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Premium Inquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="p-8 sm:p-12 rounded-3xl bg-surface-dark border border-white/10 shadow-2xl relative">
+              
+              <form id="project-inquiry-form" class="space-y-6" novalidate>
+                
+                <!-- Row 1: Name & Business -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div class="form-group">
+                    <label for="client-name" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                      Your Name <span class="text-cyan">*</span>
+                    </label>
+                    <input type="text" id="client-name" name="name" required placeholder="e.g. Tarek Mansour" class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm">
+                  </div>
+                  <div class="form-group">
+                    <label for="business-name" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                      Business Name <span class="text-cyan">*</span>
+                    </label>
+                    <input type="text" id="business-name" name="business" required placeholder="e.g. Cedar Roast House" class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm">
+                  </div>
+                </div>
+
+                <!-- Row 2: Email & Phone / WhatsApp -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div class="form-group">
+                    <label for="client-email" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                      Email Address <span class="text-cyan">*</span>
+                    </label>
+                    <input type="email" id="client-email" name="email" required placeholder="name@business.com" class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm">
+                  </div>
+                  <div class="form-group">
+                    <label for="client-phone" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                      Phone / WhatsApp <span class="text-cyan">*</span>
+                    </label>
+                    <input type="tel" id="client-phone" name="phone" required placeholder="+961 70 123 456" class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm">
+                  </div>
+                </div>
+
+                <!-- Row 3: What does your business do? -->
+                <div class="form-group">
+                  <label for="business-industry" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    What does your business do? <span class="text-cyan">*</span>
+                  </label>
+                  <input type="text" id="business-industry" name="industry" required placeholder="e.g. Specialty coffee shop with 2 branches in Beirut" class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm">
+                </div>
+
+                <!-- Row 4: What do you need? (Pill Selectors) -->
+                <div class="form-group">
+                  <label class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    What do you need? <span class="text-cyan">*</span>
+                  </label>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="New Website Design" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        New Website
+                      </div>
+                    </label>
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="Website Redesign" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        Website Redesign
+                      </div>
+                    </label>
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="E-Commerce Store" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        E-Commerce
+                      </div>
+                    </label>
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="Booking / Reservations" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        Bookings System
+                      </div>
+                    </label>
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="Mobile Optimization" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        Mobile Upgrade
+                      </div>
+                    </label>
+                    <label class="service-pill-label cursor-pointer">
+                      <input type="checkbox" name="services" value="Maintenance & Speed" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-medium text-center transition-all">
+                        Maintenance
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Row 5: Budget Range -->
+                <div class="form-group">
+                  <label class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    Estimated Budget Range (USD) <span class="text-cyan">*</span>
+                  </label>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="budget-pill-label cursor-pointer">
+                      <input type="radio" name="budget" value="$800 – $1,500" class="sr-only peer" checked>
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-mono text-center transition-all">
+                        $800 – $1,500
+                      </div>
+                    </label>
+                    <label class="budget-pill-label cursor-pointer">
+                      <input type="radio" name="budget" value="$1,500 – $3,000" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-mono text-center transition-all">
+                        $1,500 – $3k
+                      </div>
+                    </label>
+                    <label class="budget-pill-label cursor-pointer">
+                      <input type="radio" name="budget" value="$3,000 – $6,000" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-mono text-center transition-all">
+                        $3,000 – $6k
+                      </div>
+                    </label>
+                    <label class="budget-pill-label cursor-pointer">
+                      <input type="radio" name="budget" value="$6,000+" class="sr-only peer">
+                      <div class="px-3 py-2.5 rounded-xl bg-surface-elevated border border-white/10 peer-checked:border-cyan peer-checked:bg-cyan/10 peer-checked:text-cyan text-slate-300 text-xs font-mono text-center transition-all">
+                        $6,000+
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Row 6: Message -->
+                <div class="form-group">
+                  <label for="client-message" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                    Project Details &amp; Specific Goals
+                  </label>
+                  <textarea id="client-message" name="message" rows="4" placeholder="Tell us about what you want to achieve, any reference websites you like, or special features required..." class="form-input w-full px-4 py-3.5 rounded-xl bg-surface-elevated border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan transition-all text-sm resize-none"></textarea>
+                </div>
+
+                <!-- Form Action Buttons -->
+                <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+                  <button type="submit" id="submit-form-btn" class="btn-primary w-full sm:flex-1 py-4 rounded-full text-xs font-bold uppercase tracking-wider text-black bg-cyan hover:bg-white transition-all shadow-glow flex items-center justify-center gap-2">
+                    <span>Send Project Inquiry</span>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  </button>
+                  <button type="button" id="whatsapp-inquiry-btn" class="w-full sm:w-auto px-6 py-4 rounded-full text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/50 border border-emerald-500/30 hover:bg-emerald-900/40 transition-all flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.969.54 1.78.78 2.796.78h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.766-5.773-5.766zm8.81 5.766c-.002 4.874-3.966 8.84-8.841 8.84-1.52 0-2.956-.39-4.22-1.077l-4.78 1.253 1.277-4.664a8.777 8.777 0 0 1-1.12-4.352c.002-4.874 3.966-8.841 8.842-8.841 4.874 0 8.842 3.967 8.842 8.841z"/></svg>
+                    <span>Instant WhatsApp</span>
+                  </button>
+                </div>
+
+                <div class="text-center font-mono text-[11px] text-slate-500 pt-2">
+                  🔒 Confidential &amp; Protected • No Spam Guarantee
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 14. FOOTER -->
+  <!-- ========================================== -->
+  <footer id="footer" class="bg-obsidian border-t border-white/10 pt-20 pb-12 relative z-10">
+    <div class="container-custom">
+      
+      <!-- Top Row: Brand & Sitemap -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-5 flex flex-col justify-between">
+          <div>
+            <a href="#home" class="logo-group flex items-center gap-3 group mb-4" aria-label="WebAura.lb Home">
+              <div class="w-8 h-8 rounded-xl bg-surface-elevated border border-white/10 flex items-center justify-center text-cyan shadow-glow-sm">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M4 6l5 12 3-7 3 7 5-12"/>
+                  <circle cx="12" cy="4" r="1.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="font-display font-bold text-xl text-white">
+                WebAura<span class="text-cyan font-mono text-sm ml-0.5">.lb</span>
+              </span>
+            </a>
+            <p class="text-slate-400 text-sm max-w-sm leading-relaxed mb-6">
+              Digital experiences for modern businesses. Fusing bespoke aesthetics with high-octane engineering for market leaders in Lebanon and internationally.
+            </p>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-surface-dark border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan/40 transition-all" aria-label="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/96181908649" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-surface-dark border border-white/10 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all" aria-label="WhatsApp">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.969.54 1.78.78 2.796.78h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.766-5.773-5.766zm8.81 5.766c-.002 4.874-3.966 8.84-8.841 8.84-1.52 0-2.956-.39-4.22-1.077l-4.78 1.253 1.277-4.664a8.777 8.777 0 0 1-1.12-4.352c.002-4.874 3.966-8.841 8.842-8.841 4.874 0 8.842 3.967 8.842 8.841z"/></svg>
+            </a>
+            <a href="mailto:webaura.lb123@gmail.com" class="w-10 h-10 rounded-xl bg-surface-dark border border-white/10 flex items-center justify-center text-slate-400 hover:text-cyan hover:border-cyan/40 transition-all" aria-label="Email">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="md:col-span-3">
+          <span class="block font-mono text-xs uppercase tracking-wider text-white mb-4">Navigation</span>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="#home" class="hover:text-cyan transition-colors">Home</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">Services</a></li>
+            <li><a href="#work" class="hover:text-cyan transition-colors">Featured Work</a></li>
+            <li><a href="#process" class="hover:text-cyan transition-colors">Our Process</a></li>
+            <li><a href="#about" class="hover:text-cyan transition-colors">About Studio</a></li>
+            <li><a href="#faq" class="hover:text-cyan transition-colors">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-cyan transition-colors">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Sitemap -->
+        <div class="md:col-span-4">
+          <span class="block font-mono text-xs uppercase tracking-wider text-white mb-4">Services</span>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="#services" class="hover:text-cyan transition-colors">01 — Website Design</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">02 — Website Development</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">03 — E-Commerce Solutions</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">04 — Website Redesign</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">05 — Mobile Optimization</a></li>
+            <li><a href="#services" class="hover:text-cyan transition-colors">06 — Maintenance &amp; Optimization</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: Legal & Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-dim">
+        <div>
+          &copy; 2026 WebAura.lb. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <span>Beirut • Dubai • Worldwide</span>
+          <a href="#home" class="hover:text-cyan transition-colors">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- PROJECT CASE STUDY MODAL DIALOG -->
+  <!-- ========================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-surface-dark border border-white/15 p-6 sm:p-10 shadow-2xl scale-95 transition-transform duration-300">
+      
+      <!-- Close Button -->
+      <button id="modal-close-btn" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-surface-elevated border border-white/10 text-slate-400 hover:text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-cyan" aria-label="Close modal">
+        ✕
+      </button>
+
+      <!-- Dynamic Modal Content -->
+      <div id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- SUCCESS / CONFIRMATION TOAST NOTIFICATION -->
+  <!-- ========================================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 px-6 py-4 rounded-2xl bg-surface-dark border border-cyan/40 shadow-2xl text-white text-sm font-medium flex items-center gap-3 translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+    <span class="w-2.5 h-2.5 rounded-full bg-cyan animate-pulse"></span>
+    <span id="toast-message">Inquiry recorded successfully!</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 3D LIVE SPATIAL HUD -->
+  <!-- ========================================== -->
+  <div id="spatial-hud" class="spatial-hud hidden sm:flex">
+    <span class="spatial-hud-pulse"></span>
+    <span id="spatial-hud-text">3D SPATIAL ENGINE ACTIVE // Z-AXIS LERP 60FPS</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
